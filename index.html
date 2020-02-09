@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Արսեն Նազարյան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+                <th scope="col">Ողջ է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">0</th>
+                <td scope="row" style="background-color:grey;"></td>
+                <td>Դատարկ վանդակ</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է 6-30 քայլը մեկ և մահանում է, երբ նրան ուտում է խոտակերը</td>
+                <td id="grassCount"></td>
+                <td id="grassAlive"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:yellow;"></td>
+                <td>Դեղինը խոտակերն է, որը բազմանում է 30-60 հատ խոտ ուտելուց հետո և մահանում է 20 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչը</td>
+                <td id="grassEaterCount"></td>
+                <td id="grassEaterAlive"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:#951efc;"></td>
+                <td>Մանուշակագույնը գիշատիչն է, որը բազմանում է 6-8 հատ խոտ ուտելուց հետո և մահանում է 30 հատ չուտելուց
+                    հետո</td>
+                <td id="predatorCount"></td>
+                <td id="predatorAlive"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:brown;"></td>
+                <td>Շականակագույնը եղջերուն է, որը բազմանում է 6-10 հատ ջուր խմելուց հետո և մահանում է 25 հատ չխմելուց հետո
+                </td>
+                <td id="deerCount"></td>
+                <td id="deerAlive"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>Կապույտը ջուրն է, որը բազմանում է 6-30 քայլը մեկ և վերանում է, երբ նրան խմում է եղջերուն</td>
+                <td id="waterCount"></td>
+                <td id="waterAlive"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը կրակն է, որը բազմանում է 30-50 հատ ուրիշ կերպար վառելուց հետո և վերանում է 10 հատ չվառելուց
+                    հետո</td>
+                <td id="fireCount"></td>
+                <td id="fireAlive"></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td scope="row" style="background-color:black;"></td>
+                <td>Սևը թունավոր սունկն է, որը բազմանում է 30-40 քայլը մեկ և սպանում է այն կերպարին, որը նրան ուտում է</td>
+                <td id="mushroomCount"></td>
+                <td id="mushroomAlive"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h1><img id="WeatherImg1" src="">&nbsp;<p style="display:inline;" id="weather"></p>&nbsp;<img id="WeatherImg2"
+            src=""></h1>
+    <center>
+        <h2 style="color: #5834eb;">World runs:&nbsp;&nbsp;<span id="time" style="color: #6b5f5f;"></span></h2>
+    </center>
+
+
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
