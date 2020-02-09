@@ -100,7 +100,7 @@ function setup() {
                     fill('#951efc');
                 } else if (matrix[i][j] == 4) {
                     if (weather.innerText == "Winter") {
-                        fill("#9187ff");
+                        fill("#4a4fb0");
                     } else {
                         fill("blue");
                         console.log(weather);
