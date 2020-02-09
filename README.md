@@ -1,5 +1,5 @@
-# Final-Project
-Game Of Life
+# Game Of Life
+
 
 ## Installation
 
