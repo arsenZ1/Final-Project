@@ -92,25 +92,44 @@ function setup() {
                     if (weather.innerText == "Winter") {
                         fill("#defce2");
                     } else {
-                        fill("green");
+                        fill("#038203");
                     }
                 } else if (matrix[i][j] == 2) {
-                    fill("yellow");
+                    if (weather.innerText == "Winter") {
+                        fill("#f7ef59");
+                    } else {
+                        fill("#e3d807");
+                    }
                 } else if (matrix[i][j] == 3) {
-                    fill('#951efc');
+                    if (weather.innerText == "Winter") {
+                        fill("#b35cff");
+                    } else {
+                        fill('#951efc');
+                    }
                 } else if (matrix[i][j] == 4) {
                     if (weather.innerText == "Winter") {
                         fill("#4a4fb0");
                     } else {
-                        fill("blue");
-                        console.log(weather);
+                        fill("#001dd6");
                     }
                 } else if (matrix[i][j] == 5) {
-                    fill('brown');
+                    if (weather.innerText == "Winter") {
+                        fill("#914f39");
+                    } else {
+                    fill('#913111');
+                    }
                 } else if (matrix[i][j] == 6) {
-                    fill('red');
+                    if (weather.innerText == "Winter") {
+                        fill("#f04d4d");
+                    } else {
+                        fill('#ff0000');
+                    }
                 } else if (matrix[i][j] == 7) {
-                    fill('black');
+                    if (weather.innerText == "Winter") {
+                        fill("#362f2f");
+                    } else {
+                    fill('#000000');
+                    }
                 }
                 else {
                     fill('grey');
